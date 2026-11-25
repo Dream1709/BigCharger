@@ -2,14 +2,12 @@ public class GradeCalculator {
 
     public String gradeOf(int score) {
 
-        // ตรวจสอบคะแนนที่ไม่อยู่ในช่วง 0-100
         if (score < 0 || score > 100) {
             throw new IllegalArgumentException(
                 "Score must be between 0 and 100"
             );
         }
 
-        // แปลงคะแนนเป็นเกรด
         if (score >= 80) {
             return "A";
         } else if (score >= 75) {
